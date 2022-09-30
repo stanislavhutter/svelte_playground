@@ -9,11 +9,13 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@faker-js/faker": "^7.5.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.46.0",
+		"svelte-dnd-action": "^0.9.20",
 		"vite": "^3.1.0"
 	},
 	"type": "module",
