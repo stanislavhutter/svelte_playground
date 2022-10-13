@@ -3,8 +3,8 @@
     import List from '$lib/dndUI/List.svelte'
     import { faker } from '@faker-js/faker';
 	import { text } from 'svelte/internal';
-    
-    
+
+    // placeholder data
     let themes= [
         'danger',
         'primary',
@@ -16,7 +16,9 @@
     let columns= [
         'new',
         'wip',
-        'done'
+        'done',
+        'review',
+        'final'
     ];
 
     let generate_task = (id)=>{
@@ -60,6 +62,7 @@
     let task_list = generate_task_list(columns,generate_tasks(20));
     console.log(task_list);
     
+    // dnd logic
     const flipDurationMs = 300;
     function handleDndConsider(e) {
         console.log(e);
@@ -69,25 +72,26 @@
         console.log(e);
         items = e.detail.items;
     }
+
+
 </script>
 
-<div class="container d-flex flex-row " style="height: 800px;">
-    {#each task_list as col}
-
-        <div class="card m-3">
-            <div class="card-header">{col.colName}</div>
-            <div class="card-body" style=" overflow-y:auto">
-                <List items={col.tasks}/>
-            </div>
-        </div>
-
-        <div>
-            
-            
-        </div>
-        
-    {/each}
+<div id="container">
+   hello 
 </div>
+
+<style>
+    #container {
+        position: relative;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        border: 4px solid red;
+    }
+</style>
+
+
 
 
 

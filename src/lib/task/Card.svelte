@@ -1,9 +1,7 @@
 <script>
-
 	export let name = 'blah';
 	export let description;
     export let id = 0;
-
 </script>
 
 

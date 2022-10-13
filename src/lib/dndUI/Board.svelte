@@ -3,10 +3,12 @@
 	import { dndzone } from 'svelte-dnd-action';
 
     export let items;
-    export let containerWidth = '400px';
     
+    export let itemWidth = '100%';
 
 	const flipDurationMs = 300;
+
+	// handle dnd
 	function handleDndConsider(e) {
 		items = e.detail.items;
 	}
@@ -15,7 +17,7 @@
 	}
 </script>
 
-<div class="task_col" style="width:{containerWidth}" use:dndzone={{items, flipDurationMs}} on:consider={handleDndConsider} on:finalize={handleDndFinalize}>
+<div class="task_col"  use:dndzone={{items, flipDurationMs}} on:consider={handleDndConsider} on:finalize={handleDndFinalize}>
 	{#each items as item(item.id)}
 		
 		<div 
