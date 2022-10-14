@@ -16,7 +16,7 @@ function tasks_seeder(_amount){
             id: i,
             name: faker.name.firstName(),
             project_id: testData.projects[testData.projects.length * Math.random() | 0],
-            folder_id: testData.taskLists[testData.taskLists.length * Math.random() | 0],
+            list_id: testData.taskLists[testData.taskLists.length * Math.random() | 0],
         }
         tasks.push(task)
     }
