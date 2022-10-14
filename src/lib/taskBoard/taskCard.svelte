@@ -1,5 +1,5 @@
 <script>
-    import { myTasks, myGroups,myCredentials,mySettings } from "$lib/appData/store.js";
+    import { myTasks,myCredentials,mySettings } from "$lib/appData/store.js";
     import { faker } from "@faker-js/faker";
 
     let tasks = [];
