@@ -25,7 +25,7 @@ function tasks_seeder(_amount){
 }
 
 // debug in console
-let tasks = tasks_seeder(40);
+let tasks = tasks_seeder(10);
 console.log(tasks);
 
 // export stuff

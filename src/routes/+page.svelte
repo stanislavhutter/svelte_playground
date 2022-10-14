@@ -22,17 +22,17 @@
 <ContentBox overflowX=hidden overflowY=auto>
 
 	<!--Dashbaorad-->
-	<div class="container">
+	<div class="container my-4 ">
 
 		<!--Statisctics-->
-		<div class="card text-bg-dark my-3">
+		<div class="card text-bg-dark mb-4">
 			<div class="card-header">
 				<h5 class="card-title">hello Chief</h5>
 			</div>
 			<div class="card-body d-felx row-flex">
 				<h5 class="card-title">Developer Tools</h5>
 				<p class="card-text">{faker.lorem.paragraph(5)}</p>
-				<a href="#" class="btn btn-primary">Test Project Board</a>
+				<a href="/projects" class="btn btn-primary">Test Project Board</a>
 				<button class="btn btn-primary" on:click={()=>{$myTasks = [...$myTasks,{id: 100}]}}>add something to list</button>
 			</div>
 		</div>

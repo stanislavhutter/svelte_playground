@@ -11,7 +11,7 @@
 						<a class="nav-link active" aria-current="page" href="/">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/taskGroups">TaskGroups</a>
+						<a class="nav-link" href="/projects">Projects</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/taskBoard">TaskBoard</a>
