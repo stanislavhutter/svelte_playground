@@ -1,12 +1,14 @@
 import { writable } from 'svelte/store';
 import { faker } from "@faker-js/faker";
 
+// seeder source data
 let testData = {
     projects: ['project a','project b','project c'],
     taskLists: ['list a','list b','list c'],
 }
 
-function generateTasks(_amount){
+// seeder/factory
+function tasks_seeder(_amount){
     let tasks = [];
 
     for(let i = 0;i<_amount;i++){
@@ -22,7 +24,8 @@ function generateTasks(_amount){
     return tasks;
 }
 
-let tasks = generateTasks(40);
+// debug in console
+let tasks = tasks_seeder(40);
 console.log(tasks);
 
 // export stuff
